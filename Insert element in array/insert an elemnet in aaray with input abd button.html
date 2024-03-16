@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insert an element with input and button</title>
+</head>
+<script>
+    function insertEl() {
+        let data = [10, 30, 50, 30, 60, 90]
+        let newEl = document.getElementById("newel").value;
+        let position = document.getElementById("position").value;
+        newEl = parseInt(newEl)
+        for (let i = data.length - 1; i >= 0; i--) {
+            if (i >= position) {
+                data[i + 1] = data[i]
+                if (i == position) {
+                    data[i] = newEl;
+                }
+                console.warn(i)
+            }
+
+        } console.warn(data)
+    }
+
+</script>
+
+<body>
+    <input type="text" placeholder="enter a new element" id="newel" />
+    <input type="text" placeholder="enter a position" id="position" />
+    <button onclick="insertEl()">Insert</button>
+</body>
+
+</html>
