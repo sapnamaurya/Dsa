@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>search element</title>
+    <script>
+        function handleSearch() {
+            let data = [10, 22, 3, 44, 56, 77, 2, 4, 6, 87, 9]
+            let search = document.getElementById("search").value;
+            search = parseInt(search)
+            let index = '';
+            for (let i = 0; i < data.length - 1; i++) {
+                if (data[i] === search) {
+                    index = i
+                }
+                console.warn(index)
+
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <input type="text" placeholder="search element" id="search" />
+    <button onclick="handleSearch()">Search</button>
+</body>
+
+</html>
