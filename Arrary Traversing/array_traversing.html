@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Array Traversing</title>
+    <script>
+        let data = [1, 4, 6, 90, 4, 0, 12, 343, 78]
+        function getElement() {
+            let el = document.getElementById("element").value
+            if (el <= data.length && el >= 0 && typeof parseInt(el) === "number") {
+
+                alert(data[el])
+
+            }
+            else {
+                alert("please enter a valid input")
+            }
+        }
+
+
+    </script>
+</head>
+
+<body>
+    <input type="text" id="element" />
+    <button onclick="getElement()">Get Element</button>
+</body>
+
+</html>
