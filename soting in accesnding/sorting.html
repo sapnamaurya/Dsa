@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //soring in des order
+        let arr=[2,5,3,4,8,9,1,6]
+
+        for(i=0;i<arr.length;i++){
+            for(j=0;j<arr.length;j++){
+                if(arr[j]<arr[j+1]){
+                temp=arr[j]
+                arr[j]=arr[j+1]
+                arr[j+1]=temp
+            }
+        }
+        }
+        console.log(arr)
+        //soring in ass order
+        let arr1=[2,5,3,4,8,9,1,6]
+
+        for(i=0;i<arr1.length;i++){
+            for(j=0;j<arr1.length;j++){
+                if(arr[j]<arr1[j+1]){
+                temp=arr1[j]
+                arr1[j]=arr[j+1]
+                arr1[j+1]=temp
+            }
+        }
+        }
+        
+        console.log(arr)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
